@@ -13,7 +13,7 @@ Include jQuery and the plugin in the head or footer of your page.
 <script src="/js/plugins/dailyMessages.min.js"></script>
 ```
     
-Initialize the plugin targeting the class, ID or element that you want to display the message of the day. 
+Initialize the plugin targeting the class, ID or element that you want the daily message to be inserted into and send the plugin your custom messages for each day. 
 
 ```js
 $('.daily-message').dailyMessages({
