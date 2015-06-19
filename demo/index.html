@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<meta charset="utf-8">
+
+	<title>Daily Messages jQuery Plugin</title>
+	
+	<meta name="description" content="">
+	
+	<meta name="author" content="http://michaelynch.com">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/src/css/styles.css">
+	
+</head>
+
+	<body lang="en">
+	
+		<div class="daily-message"></div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		
+		<script src="/src/dailyMessages.js"></script>
+		
+		<script>
+		
+			$('.daily-message').dailyMessages({
+				monday: "Case of the Mondays?",
+				tuesday: "I know it's only Tuesday, but you can do it! ",
+				wednesday: "Hump day baby!",
+				thursday: "We all know Thursday is the new Friday.",
+				friday: "Thank God! We made it. Happy Friday folks!",
+				saturday: "It's Saturday fool! Stop using the Internets and go outside!",
+				sunday: "NFL Sunday! Or maybe some Netflix? Chill.",
+				success: function() {
+					console.log('It worked!');
+				},
+				error: function(message) {
+					console.log(message);
+					$(this).remove();
+				}
+			});
+		
+		</script>
+
+	</body>
+	
+</html>

@@ -1,0 +1,29 @@
+body {
+	background: skyblue;
+	font: 18px Arial Black, sans-serif;
+	font-weight: 900;
+	line-height: 28px;
+	margin: 0;
+	padding: 40vh 40px 0 40px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+
+	body {
+		padding: 40vh 100px 0 100px;
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+
+	body {
+		padding: 40vh 100px 0 100px;
+		font-size: 80px;
+		line-height: 90px;
+	}
+}
