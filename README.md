@@ -77,8 +77,8 @@ sunday: ""
 <br />A callback function that runs if Daily Messages is successfull (default: `function()`). 
 </li>
 
-<li>error: function()
-<br />A callback function that runs if Daily Messages fails (default: `function()`). 
+<li>error: function(message)
+<br />A callback function that runs if Daily Messages fails (default: `function(message)`). 
 </li>
 
 </ol>		
